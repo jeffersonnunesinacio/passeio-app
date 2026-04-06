@@ -1,0 +1,35 @@
+<div class="bg-amber-50 min-h-screen flex flex-col">
+<header class="bg-gradient-to-r from-amber-500 to-amber-900 text-white p-6 shadow-lg">
+    <div class="text-center">
+        <h1 class="text-3x1 text-lg font-bold">
+            {{props.titulo}}
+        </h1>
+        <p class="text-sm mt-2">
+            {{props.subTitulo}}
+        </p>
+    </div>
+
+    <div class="mt-4">
+        <hr class="border-t border-blue-300 opacity-50">
+    </div>
+
+    <nav class="mt-4">
+        <ul>
+            <li class="flex justify-center space-x-6 text-white font-semibold">
+                <a routerLink="/paginas/galeria" class="hover:text-red-800">Galeria</a>
+                <a routerLink="/paginas/categorias" class="hover:text-red-800">Categorias</a>
+                <a routerLink="/paginas/lugares" class="hover:text-red-800">Lugares</a>
+                <a (click)="logout()" routerLink="/paginas" class="hover:text-red-800">Sair</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<main class="flex-grow">
+<router-outlet></router-outlet>
+</main>
+
+<footer class="bg-amber-100 text-center p-4 mt-6">
+    <p class="text-gray-600 text-sm"> &reg;2026 Nome da Empresa. Todos os direitos reservados</p>
+</footer>
+</div>

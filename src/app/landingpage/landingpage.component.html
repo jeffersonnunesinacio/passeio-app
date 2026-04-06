@@ -1,0 +1,19 @@
+<div class=" py-10 bg-gradient-to-r from-amber-500 to-amber-800 text-white flex flex-col justify-center items-center">
+    <div class="px-6">
+        <h1 class="text-4xl font-bold mb-4 mt-12">Bem-Vindo à nome_da_empresa</h1>
+        <p class="text-lg mb-12">Explore, Organize e Compartilhe seus lugares favoritos</p>
+
+        <button (click)="navegar()" *ngIf="isLoggedIn()"
+                class="bg-white text-amber-600 font-semibold py-3 px-8 rounded-full hover:bg-gray-100 flex space-x-3 items-center mb-12">
+            Olá {{ profile?.name }}, clique aqui para aproveitar o site
+        </button>
+
+        <button (click)="logarComGoogle()" *ngIf="!isLoggedIn()"
+                class="bg-white text-amber-600 font-semibold py-3 px-8 rounded-full hover:bg-gray-100 flex space-x-3 items-center mb-12">
+            <img width="50px" src="https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-09-512.png"/>
+            Logar com Google
+        </button>
+    </div>
+</div>
+<div class="bg-amber-50 min-h-screen">
+</div>
