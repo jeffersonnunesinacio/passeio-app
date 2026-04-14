@@ -1,0 +1,51 @@
+{
+  "categorias": [
+    {
+      "id": "1",
+      "nome": "restaurantes",
+      "descricao": "lugares para alimentacao"
+    },
+    {
+      "id": "2",
+      "nome": "shoppings",
+      "descricao": "lugares para fazer compras"
+    },
+    {
+      "id": "31fc",
+      "nome": "Praias",
+      "descricao": "Lugares para passear e entrar no mar"
+    },
+    {
+      "id": "263f",
+      "nome": "Trilha",
+      "descricao": "Para pessoas aventureiras"
+    }
+  ],
+  "lugares": [
+    {
+      "id": "5009",
+      "nome": "Bar do Zé",
+      "categoria": "restaurantes",
+      "localizacao": "Salvador",
+      "urlFoto": "https://www.baressp.com.br/bares/fotos2/bar-salvador-baressp-1-min.jpg",
+      "avaliacao": "2"
+    },
+    {
+      "id": "427c",
+      "nome": "Shopping Ibirapuera",
+      "categoria": "shoppings",
+      "localizacao": "São Paulo",
+      "urlFoto": "https://gironews.com/wp-content/uploads/2026/01/Ibirapuera-Shopping.jpg",
+      "avaliacao": "3"
+    },
+    {
+      "id": "2d7e",
+      "nome": "Boali Foods",
+      "categoria": "restaurantes",
+      "localizacao": "Rio de Janeiro",
+      "urlFoto": "https://almeidajunior.com.br/wp-content/uploads/2024/10/boali-1.jpg",
+      "avaliacao": "4"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
